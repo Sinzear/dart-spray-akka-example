@@ -21,8 +21,9 @@ First things first, make sure that you've installed SBT and Chromium. If so, all
 * The various web services (here there is only one, but others can be added) are supervised by a `ServerSupervisor` actor. Within this `Actor`'s definition, a variety of route schemes can be concatenated and run with one `runRoute` function.
 * If you're working on the Dart application separately in the Dart Editor, you will constantly see errors like the following:
     ```XMLHttpRequest cannot load http://localhost:3000/api/tasks.
-No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://127.0.0.1:3030' is therefore not allowed access.
-Uncaught Error: Instance of '_XMLHttpRequestProgressEvent@0x3918afae'
-Exception: Instance of '_XMLHttpRequestProgressEvent@0x3918afae'
-  undefined (undefined:0:0)```
+    No 'Access-Control-Allow-Origin' header is present on the requested resource.
+    Origin 'http://127.0.0.1:3030' is therefore not allowed access.
+    Uncaught Error: Instance of '_XMLHttpRequestProgressEvent@0x3918afae'
+    Exception: Instance of '_XMLHttpRequestProgressEvent@0x3918afae'
+    undefined (undefined:0:0)```
 This happens because the Dart Editor expects you to be using CORS and doesn't realize that the application is being served up by something else. If you know of a good way to overcome this issue, please let me know!
