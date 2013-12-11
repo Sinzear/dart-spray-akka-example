@@ -3,3 +3,4 @@ project/project
 project/target
 .DS_Store
 src/.DS_Store
+go
