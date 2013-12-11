@@ -1,6 +1,5 @@
 name:  dart_spray_example
 description:  A sample Dart/Spray application
 
-#dependencies:
-#  js: any
-#  unittest: any
+dependencies:
+  browser: any
