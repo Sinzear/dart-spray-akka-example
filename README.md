@@ -13,6 +13,8 @@ The one other functioning REST endpoint is the `/api/tasks` endpoint, which will
 
 First things first, make sure that you've installed SBT and Chromium. If so, all you need to do is run `sbt run` and then navigate to the URL mentioned above in Chromium.
 
+The app will also run in other browsers because it includes compiled Javascript. If you make changes to any `.dart` files, make sure to re-compile the JavaScript.
+
 ### Things to Notice
 
 * This application used [Thomas Lockney](https://github.com/tlockney)'s [Spray/Akka example](https://github.com/tlockney/akka-spray-example) as an initial template.
