@@ -1,5 +1,5 @@
 Scala/Spray/Akka/Dart
-===
+=====================
 
 This is a very rudimentary application&mdash;I'll eventually turn it into a Giter8 template&mdash;that is intended to demonstrate how to get Scala/Spray/Akka to work nicely with Dart. Fortunately, it's not that hard to get started. You just need to be aware of a few things.
 
