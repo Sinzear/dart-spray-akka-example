@@ -5,8 +5,9 @@ import 'dart:html';
 import 'model.dart' show Task;
 
 void main() {
+  String root_dir = "/api/v1";
   UListElement container = querySelector('#container');
-  HttpRequest.getString('http://localhost:3000/api/tasks').then((res) {
+  HttpRequest.getString('$root_dir/tasks').then((res) {
     List taskJsonList = JSON.decode(res);
     taskJsonList.forEach((taskAsJson) {
       Task newTask = new Task.fromJson(taskAsJson);

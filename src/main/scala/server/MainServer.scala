@@ -24,7 +24,7 @@ trait MainServer extends WebService {
   val indexPageRoute: Route = pathPrefix("") { getFromDirectory("src/main/webapp") }
 
   val taskRestRoutes = {
-    pathPrefix("api") {
+    pathPrefix("api" / "v1") {
       path("tasks") {
         get {
           respondWithMediaType(`application/json`) {
